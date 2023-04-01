@@ -1,0 +1,43 @@
+5. Find the output of the following snippets:
+a. char ****k;
+i) k is a pointer to a pointer to a pointer to a char
+ii) k is a pointer to a pointer to a pointer to a pointer to a char
+iii) k is a pointer to a char pointer
+iv) k is a pointer to a pointer to a char
+
+ans:(ii)k is a pointer to a pointer to a pointer to a pointer to a char
+
+b. void main()
+{
+int k = 5;
+int *p = &k;
+int **m = &p;
+**m = 6;
+printf("%d\n", k);
+}
+i) 7
+ii) 4
+iii) 6
+iv) Error
+
+ans:(iii)6
+
+
+6. Choose the correct statement about structures in C program:
+a. Structure elements can be initialized at the time of declaration.
+b. Structure members cannot be initialized at the time of declaration
+c. Only integer members of structure can be initialized at the time of declaration
+d. None of the above
+
+ans:(b)structure members cannot be initialized at the time of declaration
+
+7. What is the size of a C structure? How the size of a C structure is calculated?
+
+ans:The size of a C structure is determined by the sum of the sizes of its individual members, with possible padding between members to satisfy alignment requirements.
+
+The size of a C structure is calculated as follows:
+
+Determine the size of each member of the structure using the sizeof operator.
+Add up the sizes of all the members.
+If necessary, add padding between members to ensure that each member is properly aligned according to its data type.
+The padding is added because many hardware architectures require that certain types of data are aligned at certain byte boundaries for performance reasons.
